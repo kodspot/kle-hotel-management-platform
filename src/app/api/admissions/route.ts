@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 
+export const runtime = "edge";
+
 type AdmissionBody = {
   name?: string;
   phone?: string;

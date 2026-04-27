@@ -7,11 +7,13 @@ import { AboutSection } from "./AboutSection";
 import { AdmissionModal } from "./AdmissionModal";
 import { CoursesSection } from "./CoursesSection";
 import { CtaSection } from "./CtaSection";
+import { FacilitiesSection } from "./FacilitiesSection";
 import { HeroSection } from "./HeroSection";
 import { LoadingScreen } from "./LoadingScreen";
 import { PlacementsSection } from "./PlacementsSection";
 import { PsychologySection } from "./PsychologySection";
 import { SignatureEntryMoment } from "./SignatureEntryMoment";
+import { SiteFooter } from "./SiteFooter";
 import { navLinks } from "@/data/content";
 import { useGsapReveal } from "@/hooks/useGsapReveal";
 import { useLenisSmoothScroll } from "@/hooks/useLenisSmoothScroll";
@@ -174,10 +176,8 @@ export function LandingPage() {
         </div>
       </header>
 
-      <main className="relative overflow-clip">
+      <main className="relative overflow-x-hidden overflow-y-clip">
         <div className="noise-overlay" />
-        <div className="pointer-events-none absolute left-[-14%] top-[18%] h-[42rem] w-[42rem] rounded-full bg-[radial-gradient(circle,#b08a4c_0%,rgba(176,138,76,0)_64%)] opacity-20 blur-3xl" />
-        <div className="pointer-events-none absolute bottom-[-10%] right-[-10%] h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,#5f5f5f_0%,rgba(95,95,95,0)_64%)] opacity-10 blur-3xl" />
 
         <HeroSection
           onOpenApply={() => {
@@ -190,10 +190,12 @@ export function LandingPage() {
         <div data-transition className="scene-transition" />
         <CoursesSection />
         <div data-transition className="scene-transition" />
+        <FacilitiesSection />
+        <div data-transition className="scene-transition" />
         <StudentJourneyWowSection />
-        <PsychologySection />
         <div data-transition className="scene-transition" />
         <PlacementsSection />
+        <PsychologySection />
         <CtaSection
           onOpenApply={() => {
             playTransitionTone();
@@ -201,6 +203,7 @@ export function LandingPage() {
             setShowModal(true);
           }}
         />
+        <SiteFooter />
       </main>
     </>
   );

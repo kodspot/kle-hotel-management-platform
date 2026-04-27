@@ -170,8 +170,8 @@ export function AdmissionModal({ open, onClose, soundEnabled }: AdmissionModalPr
             <div className="grid min-h-[640px] md:grid-cols-[0.95fr_1.05fr]">
               <div className="relative hidden overflow-hidden border-r border-white/10 md:block">
                 <Image
-                  src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=70"
-                  alt="Hospitality concierge admission"
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=70"
+                  alt="Luxury hotel room — KLE Hotel Management"
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="absolute inset-0 object-cover"
@@ -179,13 +179,15 @@ export function AdmissionModal({ open, onClose, soundEnabled }: AdmissionModalPr
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(0,0,0,0.32),rgba(0,0,0,0.9))]" />
                 <div className="relative z-10 flex h-full flex-col justify-between p-8">
-                  <p className="text-[11px] uppercase tracking-[0.24em] text-zinc-300">KLE Concierge Check-In</p>
+                  <p className="text-[10px] uppercase tracking-[0.28em] text-[#d1b27a]">KLE Concierge Check-In</p>
                   <div>
-                    <h4 className="max-w-xs text-4xl leading-tight text-white">Hospitality admissions curated with executive precision.</h4>
-                    <div className="mt-6 space-y-3 text-sm text-zinc-300">
-                      <p>Apply in 30 seconds</p>
-                      <p>Priority counseling support</p>
-                      <p>Placement-oriented course matching</p>
+                    <h4 className="max-w-xs text-4xl leading-tight text-white" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                      Hospitality admissions curated with executive precision.
+                    </h4>
+                    <div className="mt-6 space-y-3 text-sm text-zinc-400">
+                      <div className="flex items-center gap-2"><span className="text-[#d1b27a]">—</span><p>Apply in 30 seconds</p></div>
+                      <div className="flex items-center gap-2"><span className="text-[#d1b27a]">—</span><p>Priority counselling support</p></div>
+                      <div className="flex items-center gap-2"><span className="text-[#d1b27a]">—</span><p>Placement-oriented course matching</p></div>
                     </div>
                   </div>
                 </div>
