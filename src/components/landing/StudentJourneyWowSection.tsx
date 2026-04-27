@@ -24,10 +24,10 @@ const chapters = [
     title: "Launch",
     subtitle: "Career",
     body: "Enter star hotels, cruise lines, and international brands with placement support backed by MOUs with Fairfield by Marriott, The Fern UK 27, Regenta Resort, and Walt Disney USA.",
-    img: "/kle/team.jpg",
+    img: "/kle/accommodation.jpg",
     fallback: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=70",
-    objectPosition: "center 65%",
-    imgFilter: "brightness(0.45) saturate(0.4)",
+    objectPosition: "left center",
+    imgFilter: undefined,
   },
 ];
 
