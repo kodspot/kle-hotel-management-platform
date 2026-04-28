@@ -18,9 +18,10 @@ export function AboutSection() {
             src="/kle/fb-service.jpg"
             alt="KLE Hotel Management students in Food & Beverage Service training"
             fill
+            unoptimized
+            priority
             className="object-cover"
             style={{ objectPosition: "left center" }}
-            loading="lazy"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
                 "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1400&q=75";

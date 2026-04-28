@@ -30,6 +30,7 @@ export function FacilitiesSection() {
                 src="/kle/campus.jpg"
                 alt="KLE Centenary Convention Centre Campus"
                 fill
+                unoptimized
                 className="object-cover"
                 style={{ objectPosition: "0% 85%" }}
                 loading="lazy"

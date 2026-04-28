@@ -43,6 +43,7 @@ export function CoursesSection() {
                   src={course.image || fallbackImages[i] || fallbackImages[0]!}
                   alt={course.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   style={{ objectPosition: "left center" }}
                   loading="lazy"
