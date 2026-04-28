@@ -2,3 +2,11 @@ name = "kle-hotel-management"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
+
+# Cloudflare Pages: static assets (images, fonts, JS, CSS) are automatically
+# served from Cloudflare's global CDN (300+ edge locations).
+# No extra config needed — all files in public/ are edge-cached automatically.
+
+[vars]
+# Set NODE_ENV for the edge runtime
+NODE_ENV = "production"
